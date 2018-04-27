@@ -41,16 +41,6 @@ class Model {
   }
 }
 
-// let data = [{
-//   id: Math.random() * 999 + '',
-//   title: 'Заметка - 1',
-//   complete: true
-// }, {
-//   id: Math.random() * 999 + '',
-//   title: 'Заметка - 2',
-//   complete: false
-// }];
-
 const model = new Model(window.helpers.load() || null);
 
 window.model = {
