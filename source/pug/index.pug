@@ -1,0 +1,30 @@
+extends templates/main-template
+
+block variables
+  -
+    pageTitle = 'Главная';
+
+block main
+  div.todo
+    div.todo__container
+      div.todo__title-container
+        h1.todo__title TODO
+      ul.todo__items
+        //li.todo__item(data-id='test')
+        //  input#checkbox1.todo__input-checkbox.visually-hidden(type='checkbox')
+        //  label.todo__label-checkbox(for='checkbox1')
+        //  input.todo__input-rename(type='text')
+        //  p.todo__note Первая заметка
+        //  button.todo__btn-save(type='submit') изменить
+        //  button.todo__btn-delete(type='submit') удалить
+        ////li.todo__item
+        ////  input#checkbox2.todo__input-checkbox.visually-hidden(type='checkbox')
+        ////  label.todo__label-checkbox(for='checkbox2')
+        ////  input.todo__input-rename(type='text')
+        ////  p.todo__note Вторая заметка
+        ////  button.todo__btn-save(type='submit') изменить
+        ////  button.todo__btn-delete(type='submit') удалить
+      div.todo__input-container
+        input#text.todo__input-text(type='text' placeholder='Введите заметку')
+        label.visually-hidden(for='text')
+        button.todo__btn-add(type='submit') добавить
