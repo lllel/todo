@@ -35,7 +35,13 @@ function save(data) {
   localStorage.setItem('todo', items);
 }
 
-export default {Helpers, load, save};
+const helpersModule = {
+  Helpers,
+  load,
+  save
+};
+
+export default helpersModule;
 
 // window.helpers = {
 //   helpersModule: Helpers,

@@ -1,6 +1,6 @@
-import Helpers from './helpers';
+import helpersModule from './helpers';
 
-class View extends Helpers {
+class View extends helpersModule.Helpers {
   constructor(options) {
     super();
     this.elem = options.elem;
