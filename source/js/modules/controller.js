@@ -54,10 +54,12 @@ class Controller {
   }
 }
 
-const controller = new Controller(window.model.modelClass, window.view.viewClass);
+// const controller = new Controller(window.model.modelClass, window.view.viewClass);
+//
+// controller.init();
 
-controller.init();
+export default Controller;
 
-window.controller = {
-  controllerClass: controller
-};
+// window.controller = {
+//   controllerClass: controller
+// };

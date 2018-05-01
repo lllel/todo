@@ -41,8 +41,10 @@ class Model {
   }
 }
 
-const model = new Model(window.helpers.load() || null);
+// const model = new Model(window.helpers.load() || null);
 
-window.model = {
-  modelClass: model
-};
+export default Model;
+
+// window.model = {
+//   modelClass: model
+// };

@@ -34,7 +34,9 @@
     "run-sequence": "^2.2.0",
     "stylelint": "^9.2.0",
     "stylelint-config-htmlacademy": "^0.1.1",
-    "svg4everybody": "^2.1.9"
+    "svg4everybody": "^2.1.9",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
   },
   "scripts": {
     "test": "npm run editorconfig && npm run stylelint && npm run eslint",
@@ -43,7 +45,8 @@
     "babel": "babel source --out-dir build",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'source/sass/**/*.scss' --syntax scss",
-    "eslint": "eslint source/js/**/*.js"
+    "eslint": "eslint source/js/**/*.js",
+    "build-w": "webpack"
   },
   "browserslist": [
     "last 2 versions",
@@ -61,11 +64,19 @@
     "node": "8.2"
   },
   "description": "",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "author": "",
   "license": "ISC",
   "dependencies": {
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lllel/todo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lllel/todo/issues"
+  },
+  "homepage": "https://github.com/lllel/todo#readme"
 }

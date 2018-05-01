@@ -1,4 +1,4 @@
-class View extends window.helpers.helpersModule {
+class View extends Helpers {
   constructor(options) {
     super();
     this.elem = options.elem;
@@ -124,12 +124,14 @@ class View extends window.helpers.helpersModule {
   }
 }
 
-const view = new View({
-  elem: document.querySelector('.todo')
-});
+// const view = new View({
+//   elem: document.querySelector('.todo')
+// });
+//
+// // view.init();
 
-view.init();
+export default View;
 
-window.view = {
-  viewClass: view
-};
+// window.view = {
+//   viewClass: view
+// };
