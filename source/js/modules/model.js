@@ -41,7 +41,7 @@ class Model {
   }
 }
 
-const model = new Model(window.helpers.load() || null);
+const model = new Model(window.helpers.load() || []);
 
 window.model = {
   modelClass: model
