@@ -1,3 +1,5 @@
+import Helpers from './helpers';
+
 class View extends Helpers {
   constructor(options) {
     super();
