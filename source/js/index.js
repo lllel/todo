@@ -1,10 +1,11 @@
+// import {Helpers, load} from './modules/helpers';
 import helpersModule from './modules/helpers';
-import Model from './modules/model';
-import View from './modules/view';
-import Controller from './modules/controller';
+import {Model} from './modules/model';
+import {View} from './modules/view';
+import {Controller} from './modules/controller';
 
 const helpers = new helpersModule.Helpers();
-const model = new Model(helpersModule.load() || null);
+const model = new Model(helpersModule.load() || []);
 const view = new View({
   elem: document.querySelector('.todo')
 });

@@ -21,8 +21,6 @@ class Helpers {
   }
 }
 
-// const helpers = new Helpers();
-
 function load() {
   const items = localStorage.getItem('todo');
 
@@ -35,17 +33,4 @@ function save(data) {
   localStorage.setItem('todo', items);
 }
 
-const helpersModule = {
-  Helpers,
-  load,
-  save
-};
-
-export default helpersModule;
-
-// window.helpers = {
-//   helpersModule: Helpers,
-//   helpersClass: helpers,
-//   load,
-//   save
-// };
+export default {Helpers, load, save};

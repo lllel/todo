@@ -126,14 +126,6 @@ class View extends helpersModule.Helpers {
   }
 }
 
-// const view = new View({
-//   elem: document.querySelector('.todo')
-// });
-//
 // // view.init();
 
-export default View;
-
-// window.view = {
-//   viewClass: view
-// };
+export {View};
