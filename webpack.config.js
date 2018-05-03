@@ -6,7 +6,7 @@ const pug = require('./webpack/pug');
 const devserver = require('./webpack/devserver');
 const css = require('./webpack/css');
 const fileLoader = require('./webpack/file-loader');
-const imagemin = require('./webpack/imagemin');
+// const imagemin = require('./webpack/imagemin');
 
 const common = merge([
   {
@@ -53,7 +53,7 @@ module.exports = function (env) {
   if (env === 'production') {
     return merge([
       common,
-      imagemin()
+      // imagemin()
     ]);
   }
 
