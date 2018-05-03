@@ -1,4 +1,3 @@
-// import {Helpers, load} from './modules/helpers';
 import helpersModule from './modules/helpers';
 import {Model} from './modules/model';
 import {View} from './modules/view';

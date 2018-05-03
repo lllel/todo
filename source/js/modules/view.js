@@ -126,6 +126,4 @@ class View extends helpersModule.Helpers {
   }
 }
 
-// // view.init();
-
 export {View};
