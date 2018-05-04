@@ -1,4 +1,5 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 module.exports = function () {
   return {
@@ -12,9 +13,24 @@ module.exports = function () {
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: true
+                  minimize: true,
+                  sourceMap: true
                 }
-              }, 'sass-loader'
+              },
+
+              {
+                loader: 'postcss-loader',
+                options: {
+                  plugins: [
+                    autoprefixer({
+                      browsers: ['ie >= 8', 'last 4 version']
+                    })
+                  ],
+                  sourceMap: true
+                }
+              },
+
+              'sass-loader'
             ],
             publicPath: '../'
           })

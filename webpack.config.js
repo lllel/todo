@@ -7,6 +7,7 @@ const devserver = require('./webpack/devserver');
 const css = require('./webpack/css');
 const fileLoader = require('./webpack/file-loader');
 const imagemin = require('./webpack/imagemin');
+const copy = require('./webpack/copy');
 
 const common = merge([
   {
@@ -20,7 +21,8 @@ const common = merge([
       filename: 'js/bundle.js',
       path: path.join(__dirname, 'build')
     },
-    mode: 'none',
+    mode: 'production',
+    devtool: 'source-map',
 
     plugins: [
       new CleanWebpackPlugin('build', {
@@ -46,7 +48,8 @@ const common = merge([
 
   pug(),
   css(),
-  fileLoader()
+  fileLoader(),
+  copy()
 ]);
 
 module.exports = function (env) {
