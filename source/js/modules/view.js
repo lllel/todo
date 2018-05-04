@@ -1,4 +1,6 @@
-class View extends window.helpers.helpersModule {
+import helpersModule from './helpers';
+
+class View extends helpersModule.Helpers {
   constructor(options) {
     super();
     this.elem = options.elem;
@@ -124,12 +126,4 @@ class View extends window.helpers.helpersModule {
   }
 }
 
-const view = new View({
-  elem: document.querySelector('.todo')
-});
-
-view.init();
-
-window.view = {
-  viewClass: view
-};
+export {View};

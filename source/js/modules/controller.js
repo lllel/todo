@@ -54,10 +54,4 @@ class Controller {
   }
 }
 
-const controller = new Controller(window.model.modelClass, window.view.viewClass);
-
-controller.init();
-
-window.controller = {
-  controllerClass: controller
-};
+export {Controller};

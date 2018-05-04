@@ -1,3 +1,5 @@
+import helpersModule from './helpers';
+
 class Model {
   constructor(data = []) {
     this.data = data;
@@ -9,7 +11,7 @@ class Model {
 
   addItem(item) {
     this.data.push(item);
-    window.helpers.save(this.data);
+    helpersModule.save(this.data);
 
     return item;
   }
@@ -21,7 +23,7 @@ class Model {
       this.data.splice(index, 1);
     }
 
-    window.helpers.save(this.data);
+    helpersModule.save(this.data);
 
     return index;
   }
@@ -35,14 +37,18 @@ class Model {
       }
     });
 
-    window.helpers.save(this.data);
+    helpersModule.save(this.data);
 
     return item;
   }
 }
 
+<<<<<<< HEAD
 const model = new Model(window.helpers.load() || []);
 
 window.model = {
   modelClass: model
 };
+=======
+export {Model};
+>>>>>>> test
