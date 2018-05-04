@@ -43,12 +43,4 @@ class Model {
   }
 }
 
-<<<<<<< HEAD
-const model = new Model(window.helpers.load() || []);
-
-window.model = {
-  modelClass: model
-};
-=======
 export {Model};
->>>>>>> test
