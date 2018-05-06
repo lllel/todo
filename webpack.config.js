@@ -21,7 +21,7 @@ const common = merge([
       filename: 'js/bundle.js',
       path: path.join(__dirname, 'build')
     },
-    mode: 'production',
+    mode: 'none',
     devtool: 'source-map',
 
     plugins: [
@@ -32,6 +32,8 @@ const common = merge([
       }),
 
       new HtmlWebpackPlugin({
+        filename: 'index.html',
+        chunks: ['index'],
         template: path.join(__dirname, 'source') + '/pug/index.pug'
       })
     ],
